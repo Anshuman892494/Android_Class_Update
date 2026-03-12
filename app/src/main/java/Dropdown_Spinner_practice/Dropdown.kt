@@ -26,7 +26,6 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun SimpleDropdown() {
 
-    val items = listOf("Select Language","Android", "Kotlin", "Java", "Python", "C++")
     var expanded by remember { mutableStateOf(false) }
     var selectedItem by remember { mutableStateOf(items[0]) }
 
