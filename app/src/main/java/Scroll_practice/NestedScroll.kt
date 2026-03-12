@@ -34,7 +34,7 @@ fun NestedScrollExample() {
 
             items(20) { index ->
                 Text(
-                    text = "Nested Item $index",
+                    text = "Nested Item List $index",
                     fontSize = 20.sp,
                     modifier = Modifier.padding(10.dp)
                 )
