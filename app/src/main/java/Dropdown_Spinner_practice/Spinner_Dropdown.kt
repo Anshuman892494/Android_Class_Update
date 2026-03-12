@@ -22,7 +22,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-//@Preview(showBackground = true, showSystemUi = true)
 fun SpinnerExample() {
 
     val items = listOf("Select Programming Language","Android", "Kotlin", "Java", "Python", "C++","Jetpack Compose")

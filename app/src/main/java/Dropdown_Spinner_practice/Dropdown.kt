@@ -23,11 +23,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
-//@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun SimpleDropdown() {
 
-    val items = listOf("Android", "Kotlin", "Java", "Python", "C++")
+    val items = listOf("Select Language","Android", "Kotlin", "Java", "Python", "C++")
     var expanded by remember { mutableStateOf(false) }
     var selectedItem by remember { mutableStateOf(items[0]) }
 

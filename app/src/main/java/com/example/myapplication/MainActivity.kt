@@ -16,6 +16,7 @@ class MainActivity : ComponentActivity() {
 //            StudentDashboard()
 //            VerticalScrollExample()
             SimpleDropdown()
+//            SpinnerExample()
         }
     }
 }
