@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.dp
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SimpleDropdown() {
-
+    val items = listOf("Select Programming Language","Android", "Kotlin", "Java", "Python", "C++","Jetpack Compose")
     var expanded by remember { mutableStateOf(false) }
     var selectedItem by remember { mutableStateOf(items[0]) }
 
