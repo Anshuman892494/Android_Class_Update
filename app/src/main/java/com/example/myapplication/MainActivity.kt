@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import Menu_dropdown.SimpleMenu
 import Progress_Bars.AnimatedProgressBar
 import Progress_Bars.CircularProgressExample
 import Progress_Bars.CircularProgressWithValue
@@ -16,6 +17,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.Composable
 import rating_bar.RatingScreen
 
 class MainActivity : ComponentActivity() {
@@ -25,8 +27,9 @@ class MainActivity : ComponentActivity() {
         setContent {
 
 
+//            SimpleMenu()
 //            Rating Star
-              RatingScreen()
+//              RatingScreen()
 
 //            NestedScrollScreen()
 //            SplashApp()
