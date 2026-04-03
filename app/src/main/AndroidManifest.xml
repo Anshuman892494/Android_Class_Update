@@ -45,6 +45,7 @@
             android:theme="@style/Theme.MyApplication">
         </activity>
 
+<!--        Alarm Activity-->
         <activity
             android:name="Alarm_Set.AlarmActivity"
             android:exported="true"
@@ -92,6 +93,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+<!--        Alarm Activity By Date Picker-->
+        <activity
+            android:name="Alarm_Set_DatePicker.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="Alarm_Set_DatePicker.AlarmReceiver"
+            android:exported="false">
+        </receiver>
+
     </application>
 
 </manifest>
