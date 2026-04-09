@@ -1,4 +1,4 @@
-package my_files
+package List_and_Grid
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -10,6 +10,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color.Companion.Red
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -28,14 +29,15 @@ fun StudentList() {
     LazyColumn(
         modifier = Modifier
             .fillMaxWidth(),
-        contentPadding = PaddingValues(16.dp)
+        contentPadding = PaddingValues(50.dp)
     ) {
         items(students) { student ->
 
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 8.dp),
+                    .padding(vertical = 18.dp),
+                colors = CardDefaults.cardColors(Red),
                 elevation = CardDefaults.cardElevation(10.dp)
             ) {
                 Text(

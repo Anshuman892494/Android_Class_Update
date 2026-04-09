@@ -47,6 +47,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.delay
 
+
     @Composable
     fun CircularProgressExample() {
         Box(
@@ -54,7 +55,7 @@ import kotlinx.coroutines.delay
             modifier = Modifier.fillMaxSize()
         ) {
             CircularProgressIndicator(
-                modifier = Modifier.size(60.dp),
+                modifier = Modifier.size(100.dp),
                 strokeWidth = 10.dp
             )
         }

@@ -46,6 +46,5 @@ fun NestedScrollExample() {
             fontSize = 24.sp,
             modifier = Modifier.padding(10.dp)
         )
-
     }
 }

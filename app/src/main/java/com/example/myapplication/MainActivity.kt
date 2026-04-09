@@ -1,24 +1,10 @@
 package com.example.myapplication
 
-import Menu_dropdown.SimpleMenu
-import Progress_Bars.AnimatedProgressBar
-import Progress_Bars.CircularProgressExample
-import Progress_Bars.CircularProgressWithValue
-import Progress_Bars.CustomColorProgressBar
-import Progress_Bars.GradientProgressBar
-import Progress_Bars.IndeterminateLinearProgress
-import Progress_Bars.LinearProgressExample
-import Progress_Bars.LoadingSimulation
-import Progress_Bars.ProgressWithText
-import Progress_Bars.StepProgressBar
-import Scroll_practice.NestedScrollScreen
-import Splash_Screen.SplashApp
+import Intent.IntentScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.runtime.Composable
-import rating_bar.RatingScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,13 +12,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
 
-
-//            SimpleMenu()
-//            Rating Star
-//              RatingScreen()
-
-//            NestedScrollScreen()
-//            SplashApp()
+//            intent()
+            IntentScreen()
+//            RatingScreen()
+//            SimpleDropdown()
+//            SpinnerExample()
 
 //            Progress Bars
 //            CircularProgressExample()

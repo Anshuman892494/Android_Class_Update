@@ -57,6 +57,7 @@ dependencies {
 
 //    Adding for Rating Star Icons
     implementation("androidx.compose.material:material-icons-extended")
+    implementation(libs.androidx.ui.graphics)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

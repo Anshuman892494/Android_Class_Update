@@ -1,5 +1,6 @@
-package my_files
+package List_and_Grid
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -22,7 +23,7 @@ fun CourseGrid() {
 
     val courses = listOf(
         "Android",
-        "React Native",
+        "React",
         "Flutter",
         "Kotlin",
         "Java",
@@ -30,8 +31,12 @@ fun CourseGrid() {
     )
 
     LazyVerticalGrid(
-        columns = GridCells.Fixed(2),
-        contentPadding = PaddingValues(16.dp)
+        columns = GridCells.Fixed(3),
+        modifier = Modifier
+            .fillMaxWidth(),
+        contentPadding = PaddingValues(16.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+        horizontalArrangement = Arrangement.spacedBy(16.dp)
     ) {
 
         items(courses) { course ->
@@ -44,7 +49,8 @@ fun CourseGrid() {
             ) {
 
                 Box(
-                    modifier = Modifier.padding(24.dp),
+                    modifier = Modifier.padding(24.dp)
+                        .fillMaxWidth(),
                     contentAlignment = Alignment.Center
                 ) {
 

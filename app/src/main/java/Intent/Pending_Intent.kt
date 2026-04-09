@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 
 class Pending_Intent : ComponentActivity() {
 
@@ -43,7 +44,7 @@ class Pending_Intent : ComponentActivity() {
     }
     @Composable
     fun PendingIntentExample() {
-        val context = LocalContext.current
+        val context = LocalContext.current 
         Column(
             modifier = Modifier
                 .fillMaxSize(),
@@ -66,10 +67,9 @@ class Pending_Intent : ComponentActivity() {
                         .setContentText("Click to open second screen")
                         .setSmallIcon(android.R.drawable.ic_dialog_info)
                         .setContentIntent(pendingIntent)
+                        .setAutoCancel(true)
                         .build()
-
-                    notificationManager.notify(1, notification)
-
+                    notificationManager.notify(0, notification)
                 }
             ) {
                 Text("Show Notification")

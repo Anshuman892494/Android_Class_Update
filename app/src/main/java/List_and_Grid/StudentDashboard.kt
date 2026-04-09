@@ -1,4 +1,4 @@
-package my_files
+package List_and_Grid
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

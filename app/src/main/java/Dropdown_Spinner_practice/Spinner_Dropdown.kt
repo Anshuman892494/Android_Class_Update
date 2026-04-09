@@ -35,7 +35,10 @@ fun SpinnerExample() {
             .statusBarsPadding()
     ) {
 
-        Text(text = "Select Language", style = MaterialTheme.typography.titleLarge)
+        Text(
+            text = "Select Language",
+            style = MaterialTheme.typography.titleLarge
+        )
 
         Spacer(modifier = Modifier.height(10.dp))
 
