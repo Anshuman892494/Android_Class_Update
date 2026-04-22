@@ -12,12 +12,6 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
 
-//            intent()
-            IntentScreen()
-//            RatingScreen()
-//            SimpleDropdown()
-//            SpinnerExample()
-
 //            Progress Bars
 //            CircularProgressExample()
 //            LinearProgressExample()
