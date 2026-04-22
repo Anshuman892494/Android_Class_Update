@@ -1,5 +1,6 @@
 package Scope_Storage
 
+
 import android.content.ContentValues
 import android.content.Context
 import android.graphics.Bitmap
