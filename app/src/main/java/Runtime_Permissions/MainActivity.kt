@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
@@ -85,7 +86,7 @@ fun PermissionScreen() {
                 }
             } else {
                 Button(onClick = {
-                    // Perform your action here
+                    Toast.makeText(context, "Accessing images now that permission is granted!", Toast.LENGTH_SHORT).show()
                 }) {
                     Text("Proceed with Feature")
                 }
